@@ -1,19 +1,21 @@
 <h1>Stack Overflow Clone</h1>
-<a href ="/">Questions</a>
+<a href ="/questions/new">Questions</a>
 <ul>
     {{#each questions}}
     <li>
-        <h2>Type: 
-            {{this.title}}</h2>
-    </li>
-    <li>
+       <a href= '/questions/{{this.id}}''>Type:
+    {{this.title}}</a>
+    {{!-- </li>
+    <li> --}}
         <p>Question: {{this.question}}</p>
-    </li>
-    <li>
+    {{!-- </li>
+    <li> --}}
         <p>Answer: {{this.answer}}</p>
-    </li>
-    <li>
+    {{!-- </li>
+    <li> --}}
         <p>Date: {{this.date}}</p>
     </li>
     {{/each}}
 </ul>
+
+<a href="questions/new">New</a>

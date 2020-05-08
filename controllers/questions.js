@@ -12,10 +12,25 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     const id = req.params.id;
-    Question.findById(id).then((question) => {
-        res.render('questions', question);
+    Question.findById({_id : req.params.id})
+    .then((question) => {
+        console.log(question);
+        res.render('show', question);
     });
 });
+
+
+router.get('/new', (req, res) => {
+	res.render('new');
+});
+
+router.get('/edit/:id', (req, res) => {
+	const id = req.params.id;
+	Question.findById({_id: req.params.id}).then((question) => {
+		res.render('edit', question);
+	});
+});
+
 
 // router.get()
 module.exports = router;

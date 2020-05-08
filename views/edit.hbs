@@ -1,0 +1,9 @@
+<h1>Post your Answer</h1>
+
+<form action="/questions/{{this.id}}?_method=put" method="POST">
+    <p>
+        <label for="answer">Answer</label>
+        <input type="text" name="answer">
+    </p>
+    <input type="submit" value="Update">
+</form>

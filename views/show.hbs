@@ -1,9 +1,9 @@
-<h1>{{questions}}</h1>
+<a href='/questions/{{this.id}}'>{{question}}</a>
 
+<a href='/questions'>Questions</a> 
 
-
-{{!-- <ul>
-    {{#each questions}}
+<ul>
+    {{#each question}}
     <li>
         <h2>Type: <a href ="/{{this.id}}">{{this.title}}</a></h2>
     </li>
@@ -16,4 +16,5 @@
     <li>
         <p>Date: {{this.date}}</p>
     </li>
-</ul> --}}
+    {{/each}}
+</ul> 
