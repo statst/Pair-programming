@@ -8,4 +8,4 @@ password: String
 
 const userInput =mongoose.model('userInput', userInputSchema)
 
-module.exports = userInput
+module.exports = userInput;
