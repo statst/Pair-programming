@@ -1,11 +1,24 @@
-<a href='/questions/{{this.id}}'>{{question}}</a>
+<div>
+    <h1> Type:{{this.title}}</h1>
+    <p>{{this.question}}</p>
+    <code> const abc = () =>{
+        console.log(abc)}
+    </code>
+    <p>
+    <time datetime="1914-12-20T08:00">{{this.date}}</time>
+    </p>
+</div>  
 
-<a href='/questions'>Questions</a> 
 
-<ul>
-    {{#each question}}
+
+
+
+
+
+{{!-- <ul>
+  
     <li>
-        <h2>Type: <a href ="/{{this.id}}">{{this.title}}</a></h2>
+        <h1>>Type:{{this.title}}</h1>
     </li>
     <li>
         <p>Question: {{this.question}}</p>
@@ -16,5 +29,5 @@
     <li>
         <p>Date: {{this.date}}</p>
     </li>
-    {{/each}}
-</ul> 
+   
+</ul>  --}}
