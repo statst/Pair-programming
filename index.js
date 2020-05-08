@@ -1,22 +1,18 @@
-const express = require('express')
-const app = express()
-app.use(express.json())
-app.use(express.urlencoded({extended: true}))
+const express = require('express');
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
-app.set('view engine', 'hbs')
+app.set('view engine', 'hbs');
 
 // const methodOverride = require('method-override');
 
 // app.use(methodOverride('_method'));
 
-const applicationController = require('./controllers/application')
+const questionsController = require('./controllers/questions');
 
-app.use('/application', applicationController)
+app.use('/questions', questionsController);
 
-
-
-
-
-app.listen(4000, ()=>{
-    console.log('app listening on the port')
-})
+app.listen(4000, () => {
+    console.log('app listening on the port');
+});

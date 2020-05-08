@@ -3,11 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-	Question.find()
-		.then((questions) => {
-			res.render('index', { questions });
-		})
-		.catch((err) => console.log(err));
+    Question.find({})
+        .then((questions) => {
+            res.render('index', {questions});
+        })
+        .catch((err) => console.log(err));
 });
 
 router.get('/:id', (req, res) => {

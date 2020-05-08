@@ -1,2 +1,19 @@
 <h1>Stack Overflow Clone</h1>
-<a href ="/application">Questions</a>
+<a href ="/">Questions</a>
+<ul>
+    {{#each questions}}
+    <li>
+        <h2>Type: 
+            {{this.title}}</h2>
+    </li>
+    <li>
+        <p>Question: {{this.question}}</p>
+    </li>
+    <li>
+        <p>Answer: {{this.answer}}</p>
+    </li>
+    <li>
+        <p>Date: {{this.date}}</p>
+    </li>
+    {{/each}}
+</ul>
