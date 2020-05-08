@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/stack_overflow')
+mongoose.connect('mongodb://localhost/stack_overflow');
 
-module.export = mongoose;
+module.exports = mongoose;

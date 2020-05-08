@@ -1,0 +1,46 @@
+[
+    {
+        "title": "git Question1",
+        "question": "1.How can I undo those commits from the local repository?",
+        "answer": [
+            "$ git commit -m Something terribly misguided",
+            "$ git reset HEAD~  ",
+            "git add .",
+            "git commit -c ORIG_HEAD  "
+        ],
+        "date": "May 8,2020"
+    },
+    {
+        "title": "git Question2",
+        "question": "2.How can I undo those commits from the local repository?",
+        "answer": [
+            "$ git commit -m Something terribly misguided",
+            "$ git reset HEAD~  ",
+            "git add .",
+            "git commit -c ORIG_HEAD  "
+        ],
+        "date": "May 8,2020"
+    },
+    {
+        "title": "git Question3",
+        "question": "3.How can I undo those commits from the local repository?",
+        "answer": [
+            "$ git commit -m Something terribly misguided",
+            "$ git reset HEAD~  ",
+            "git add something",
+            "git commit something "
+        ],
+        "date": "May 8,2020"
+    },
+    {
+        "title": "git Question4",
+        "question": "4.How can I undo those commits from the local repository?",
+        "answer": [
+            "$ git commit -m Something terribly misguided",
+            "$ git reset something  ",
+            "git add .",
+            "git commit -c ORIG_HEAD  "
+        ],
+        "date": "May 8,2020"
+    }
+]
