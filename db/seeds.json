@@ -1,57 +1,37 @@
 [
 	{
         "title": "git Question1",
-        "question1": "1.How can I undo those commits from the local repository?",
-		"description": "Stackoverflow question",
-		"answer": [
-			{
-				"text": "$ git commit -m Something terribly misguided"
-			},
-			{
-				"date": "May 8,2020"
-			}
-		],
-		"date": "May 8,2020"
-	},
-	{
-		"question2": "git Question1",
 		"description": "1.How can I undo those commits from the local repository?",
-		"answer": [
-			{
-				"text": "$ git commit -m Something terribly misguided"
-			},
-			{
-				"date": "May 8,2020"
-			}
-		],
-		"date": "May 8,2020"
+		"user": "Kirti",
+		"answer":["$ git commit -m Something terribly misguided", "$ git commit -m Something terribly misguided"],
+		"postDate": "May 8,2020"
 	},
 	{
-	    "title": "git Question1",
-        "question3": "1.How can I undo those commits from the local repository?",
-		"description": "Stackoverflow question",
-		"answer": [
-			{
-				"text": "$ git commit -m Something terribly misguided"
-			},
-			{
-				"date": "May 8,2020"
-			}
-		],
-		"date": "May 8,2020"
+        "title": "git Question2",
+		"description": "1.How can I undo those commits from the local repository?",
+		"user": "Kirti",
+		"answer":["$ git commit -m Something terribly misguided", "$ git commit -m Something terribly misguided"],
+		"postDate": "May 8,2020"
 	},
 	{
-		    "title": "git Question1",
-        "question4": "1.How can I undo those commits from the local repository?",
-		"description": "Stackoverflow question",
-		"answer": [
-			{
-				"text": "$ git commit -m Something terribly misguided"
-			},
-			{
-				"date": "May 8,2020"
-			}
-		],
-		"date": "May 8,2020"
+        "title": "git Question3",
+		"description": "1.How can I undo those commits from the local repository?",
+		"user": "Kirti",
+		"answer":["$ git commit -m Something terribly misguided", "$ git commit -m Something terribly misguided"],
+		"postDate": "May 8,2020"
+	},
+	{
+        "title": "git Question4",
+		"description": "1.How can I undo those commits from the local repository?",
+		"user": "Kirti",
+		"answer":["$ git commit -m Something terribly misguided", "$ git commit -m Something terribly misguided"],
+		"postDate": "May 8,2020"
+	},
+	{
+        "title": "git Question5",
+		"description": "1.How can I undo those commits from the local repository?",
+		"user": "Kirti",
+		"answer":["$ git commit -m Something terribly misguided", "$ git commit -m Something terribly misguided"],
+		"postDate": "May 8,2020"
 	}
 ]

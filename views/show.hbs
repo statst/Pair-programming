@@ -1,25 +1,25 @@
 <div>
     <h1> Type:{{this.question}}</h1>
-    <p>{{this.description}}</p>
+    <p>Description:{{this.description}}</p>
     <code> const abc = () =>{
         console.log(abc)}
     </code>
     <p>
     <time datetime="1914-12-20T08:00">{{this.date}}</time>
+    <a href='/questions/edit/id'></a>
     </p>
-    <div>
-    <form action="/questions/{{this.id}}?_method=put" method="post">
-        
-            <label>Answer:</label>
-            <textarea></textarea>
-            {{!-- <input type="text" value="{{this.answer}}" name="answer" /> --}}
-        
-       
-        {{!-- <input type="submit" value="Update" /> --}}
-    </form>
-    <a href='/questions/edit/id'> <button>Post Your Answer</button></a>
 
-    </div>
+<ul>
+    {{#each answer}}
+    <li>Answer:{{this}}
+<button>Post Your Answer</button><button>Edit</button></a>
+</li>
+{{/each}}
+</ul>
+
+    
+
+
     
 </div>  
 

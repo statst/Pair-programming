@@ -5,31 +5,16 @@ const mongoose = require('../db/connection');
 //     password: String
 // });
 
-const questionSchema = new mongoose.Schema({
-	// title: String,
-	// question: String,
-	// answer: [String],
-	// date: Date
-	title: String,
-	question: String,
-
-	description: String,
-
-	answers: [
-		{
-			text: String,
-			date: {
-				type: Date,
-				default: Date.now,
-			},
-		},
-	],
-	date: {
-		type: Date,
-		default: Date.now,
+const questionSchema = new mongoose.Schema(
+	{
+		title: { type: String, required: true },
+		description: String,
+		user: String,
+		answer: [],
+		postDate: { type: Date, default: Date.now },
 	},
-});
-
+	// { collection: 'questions' }
+);
 // const userInput = mongoose.model('userInput', userInputSchema);
 const Question = mongoose.model('question', questionSchema);
 
