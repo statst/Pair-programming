@@ -5,9 +5,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.set('view engine', 'hbs');
 
-// const methodOverride = require('method-override');
+const methodOverride = require('method-override');
 
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
 const questionsController = require('./controllers/questions');
 
