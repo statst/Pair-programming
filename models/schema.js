@@ -1,9 +1,5 @@
 const mongoose = require('../db/connection');
 
-// const userInputSchema = new mongoose.Schema({
-//     email: String,
-//     password: String
-// });
 
 const questionSchema = new mongoose.Schema(
 	{
@@ -13,9 +9,8 @@ const questionSchema = new mongoose.Schema(
 		answer: [],
 		postDate: { type: Date, default: Date.now },
 	},
-	// { collection: 'questions' }
 );
-// const userInput = mongoose.model('userInput', userInputSchema);
+
 const Question = mongoose.model('question', questionSchema);
 
 module.exports = Question;

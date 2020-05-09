@@ -1,64 +1,14 @@
-{{!-- <div>
-    <h1> Type:{{this.question}}</h1>
-    <p>Description:{{this.description}}</p>
-   
-    <p>
-    <time datetime="1914-12-20T08:00">{{this.date}}</time>
-   
-    </p>
-
-<ul>
-    {{#each answer}}
-    <li>
-    <code>Answer:{{this}}</code>
-<button>Post Your Answer</button>
-<button>Edit</button>
-
-</li>
-{{/each}}
-</ul>
-
-    
-
-
-    
-</div>   --}}
-
 <h1>{{ title }}</h1>
 <ul>
     <li>Description: {{ description }}</li>
     <li>User: {{ user }}</li>
     <li>Date: {{ postDate }}</li>
-    <li>Answer: {{ answer }}</li>
     <a href='/questions/edit/{{id}}'>Edit</a>
 </ul>
-<p>Post Your Answer:</p>
-
-
-
-
-
-
-<form action="/questions/{{id}}" method="post">
-    <input type="text" name="answer" placeholder="name">
-    <input type="text" name="answer" placeholder="answer">
-    <a href='/questions/id'>Submit</a>
-</form>
-
-
-{{!-- <ul>
-  
-    <li>
-        <h1>>Type:{{this.title}}</h1>
+<ul>
+    {{#each answers}}
+    <li>Answer: {{this}}
+        <button>Edit Answer</button>
     </li>
-    <li>
-        <p>Question: {{this.question}}</p>
-    </li>
-    <li>
-        <p>Answer: {{this.answer}}</p>
-    </li>
-    <li>
-        <p>Date: {{this.date}}</p>
-    </li>
-   
-</ul>  --}}
+    {{/each}}
+</ul>

@@ -1,15 +1,25 @@
-<h2>Edit Question
-    :</h2>
+<h1 style= 'text-align: center; color:rgb(77, 66, 66); font-family:Gotham' >Edit Question</h1>
 
 <form action="/questions/edit/{{this.id}}?_method=put" method="post">
-    <label for="title">title</label>
-    <input id="title" type="text" name="title" value="{{title}}">
-    <label for=" description">description</label>
-    <input id="description" type="text" name="description" value="{{this.description}}">
-    <label for=" user">user</label>
-    <input id="user" type="text" name="user" value="{{this.user}}">
-    <input type="submit" value="Update" />
+    <label for="title" style= 'text-align: center; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px; margin: 20px'>title</label>
+    <br>
+    <input id="title" type="text" name="title" value="{{title}}" style= 'width: 800px; height: 50px; margin: 20px'>
+    <br>
+    <label for=" description" style= 'text-align: center; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px; margin: 20px'>Description</label>
+    <br>
+    <input id="description" type="text" name="description" value="{{this.description}}" style= 'width: 800px; height: 100px; padding: 10px 10px 10px 10px; font-size: 24px; margin: 20px'>
+    <br>
+    <label for=" user" style= 'text-align: center; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px; margin: 20px'>User</label>
+    <br>
+    <input id="user" type="text" name="user" value="{{this.user}}" style= 'width: 800px; height: 50px; font-size: 24px; margin: 20px'>
+    <br>
+    <label for=" date" style= 'text-align: center; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px; margin: 20px'>Date</label>
+    <br>
+    <input id="date" type="text" name="date" value="{{this.postDate}}" style= 'width: 200px; height: 20px; padding: 10px 10px 10px 10px; margin: 18px; font-size: 16px; font-style: Arial'>
+    <br>
+    <input type="submit" value="Update" style= 'width: 100px; height: 50px; padding: 10px 10px 10px 10px; margin: 1rem 24rem; background-color:rgb(156, 167, 163, 0.5); font-size: 20px; font-style: Arial'/>
 </form>
+
 <form action="/questions/edit/{{this.id}}?_method=delete" method="post">
-    <input type="submit" value="Remove" />
+    <input type="submit" value="Delete" style= 'width: 100px; height: 50px; padding: 10px 10px 10px 10px; margin: 0rem 2rem; background-color:rgb(156, 167, 163, 0.5); font-size: 20px; font-style: Arial'/>
 </form>
