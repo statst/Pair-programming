@@ -1,0 +1,49 @@
+[
+	{
+		"title": "Python",
+		"description": "How can I merge two Python dictionaries in a single expression?",
+		"user": "F",
+		"answer": ["z = {**x, **y}", "z = merge_two_dicts(x, y)"],
+		"postDate": "May 8,2020"
+	},
+	{
+		"title": "JavaScript",
+		"description": "How can I get query string values in JavaScript?",
+		"user": "B",
+		"answer": [
+			"const urlParams = new URLSearchParams(window.location.search);",
+			"const myParam = urlParams.get('myParam')"
+		],
+		"postDate": "May 8,2020"
+	},
+	{
+		"title": "JavaScript",
+		"description": "Facing issue with bar chart png image using canvas on Node.js",
+		"user": "P",
+		"answer": [
+			"Make sure you have node installed on your server",
+			"run npm install in terminal and after installations over, run node server in terminal"
+		],
+		"postDate": "May 8,2020"
+	},
+	{
+		"title": "JavaScript",
+		"description": "How to change content by clicking in Javascript?",
+		"user": "J",
+		"answer": [
+			"document.getElementById('button').HTML = 'undo'",
+			"<button id = 'button'>click</button>"
+		],
+		"postDate": "May 8,2020"
+	},
+	{
+		"title": "git Question5",
+		"description": "1.How can I undo those commits from the local repository?",
+		"user": "Happy",
+		"answer": [
+			"$ git commit -m Something terribly misguided",
+			"$ git commit -m"
+		],
+		"postDate": "May 8,2020"
+	}
+]

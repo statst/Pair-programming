@@ -1,0 +1,14 @@
+ <h1 style='text-align:center'>StackOverflow-style Question/Answer page</h1>
+
+<a href ="/questions/new" style='font-size: 28px'>Ask Questions</a>
+<ul>
+    {{#each questions}}
+    <li>
+        <h2 style='font-size: 24px'>{{this.title}}</h2>
+       <a href= '/questions/{{this.id}}' style='font-size: 20px'>Type:
+    {{this.description}}</a>
+  <p style='font-size: 22px'>{{this.description}}</p>
+    </li>
+    {{/each}}
+</ul>
+<a href="/questions/new" style='font-size: 22px'>Add New Question</a> 

@@ -1,0 +1,21 @@
+<h1 style ='text-align: center; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>{{ title }}</h1>
+<ul>
+    <li style= 'text-align: left; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>Description: {{ description }}</li>
+    <br>
+    <li style ='text-align: left; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>User: {{ user }}</li>
+    <br>
+    <li style = 'text-align: left; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>Date: {{ postDate }}</li>
+    <br>
+    <a href='/questions/edit/{{id}}'style='font-size: 20px'>Edit Question</a>
+</ul>
+<ul style = 'text-align: left; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>
+    {{#each answer}}
+    <li style = 'text-align: left; color:rgb(12, 1, 1); font-family:Gotham; font-size:24px'>Answer: {{this}}  
+    </li>
+    {{/each}}
+</ul>
+<form action="/questions/{{id}}" method="post">
+   
+    <input type="text" name="answer" placeholder="answer" style= 'width: 800px; height: 100px; padding: 10px 10px 10px 10px; font-size: 24px; margin: 20px'>
+    <input type="submit" style= 'width: 100px; height: 50px; padding: 10px 10px 10px 10px; font-size: 24px; margin: 20px; background-color: rgba(197, 181, 181, 0.5)'>
+</form>
