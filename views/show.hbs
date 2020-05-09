@@ -1,18 +1,19 @@
-<div>
+{{!-- <div>
     <h1> Type:{{this.question}}</h1>
     <p>Description:{{this.description}}</p>
-    <code> const abc = () =>{
-        console.log(abc)}
-    </code>
+   
     <p>
     <time datetime="1914-12-20T08:00">{{this.date}}</time>
-    <a href='/questions/edit/id'></a>
+   
     </p>
 
 <ul>
     {{#each answer}}
-    <li>Answer:{{this}}
-<button>Post Your Answer</button><button>Edit</button></a>
+    <li>
+    <code>Answer:{{this}}</code>
+<button>Post Your Answer</button>
+<button>Edit</button>
+
 </li>
 {{/each}}
 </ul>
@@ -21,10 +22,28 @@
 
 
     
-</div>  
+</div>   --}}
+
+<h1>{{ title }}</h1>
+<ul>
+    <li>Description: {{ description }}</li>
+    <li>User: {{ user }}</li>
+    <li>Date: {{ postDate }}</li>
+    <li>Answer: {{ answer }}</li>
+    <a href='/questions/edit/{{id}}'>Edit</a>
+</ul>
+<p>Post Your Answer:</p>
 
 
 
+
+
+
+<form action="/questions/{{id}}" method="post">
+    <input type="text" name="answer" placeholder="name">
+    <input type="text" name="answer" placeholder="answer">
+    <a href='/questions/id'>Submit</a>
+</form>
 
 
 {{!-- <ul>

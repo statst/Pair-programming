@@ -1,11 +1,15 @@
-<h1>Post your Answer</h1>
+<h2>Edit Question
+    :</h2>
 
-<form action="/questions/edit/{{this.id}}?_method=put" method="POST">
-<label for title="title">title</label>
-<input id="title"type="text"name="title"value="{{title}}">
-<label for="description">description</label>
-<input id="description" type="description" name="description" value="{{this.description}}">
-<label for="user">user</label>
-<input id="user" type="user" name="user" value="{{this.user}}">
-<input type="submit" value="Update"/>
+<form action="/questions/edit/{{this.id}}?_method=put" method="post">
+    <label for="title">title</label>
+    <input id="title" type="text" name="title" value="{{title}}">
+    <label for=" description">description</label>
+    <input id="description" type="text" name="description" value="{{this.description}}">
+    <label for=" user">user</label>
+    <input id="user" type="text" name="user" value="{{this.user}}">
+    <input type="submit" value="Update" />
+</form>
+<form action="/questions/edit/{{this.id}}?_method=delete" method="post">
+    <input type="submit" value="Remove" />
 </form>

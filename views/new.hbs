@@ -1,17 +1,11 @@
-<h1>Post a Question</h1>
-{{!-- 
-<form action ='/questions' method='Post'>
-{{!-- <p> --}}
-    <label for="title" name="title"></label>
-    <input type = "text"name="title">
-{{!-- </p>
-<p> --}}
-    <label for="question" name="question"></label>
-    <input type="text" name="question">
-{{!-- </p>
-<p> --}}
-    <label for="answer" name="answer"></label>
-    <input type="text" name="answer">
-{{!-- </p> --}}
-<button type ="submit">Post Question</button>
-</form> --}}
+<h1>Ask a Question</h1>
+
+<form action="/questions" method="post">
+    <label for="title">title</label>
+    <input id="title" type="text" name="title">
+    <label for="description">description</label>
+    <input id="description" type="text" name="description">
+    <label for="user">user</label>
+    <input id="user" type="text" name="user">
+    <button type="submit">Add a Question</button>
+</form>
