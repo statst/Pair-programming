@@ -3,12 +3,18 @@
     <li>Description: {{ description }}</li>
     <li>User: {{ user }}</li>
     <li>Date: {{ postDate }}</li>
+    
     <a href='/questions/edit/{{id}}'>Edit</a>
 </ul>
 <ul>
-    {{#each answers}}
+    {{#each answer}}
     <li>Answer: {{this}}
-        <button>Edit Answer</button>
+       
     </li>
     {{/each}}
 </ul>
+<form action="/questions/{{id}}" method="post">
+   
+    <input type="text" name="answer" placeholder="answer">
+    <input type="submit">
+</form>
